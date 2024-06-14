@@ -4,11 +4,13 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "start":"node ."
+    "start": "node .",
+    "install-puppeteer-chrome": "npx puppeteer browsers install chrome"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "venom-bot": "^5.1.0"
+    "venom-bot": "^5.1.0",
+    "puppeteer": "^21.0.1"
   }
 }

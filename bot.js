@@ -1,11 +1,17 @@
-// Supports ES6
-// import { create, Whatsapp } from 'venom-bot';
 const venom = require('venom-bot');
+const puppeteer = require('puppeteer');
 
 venom
-  .create({
-    session: 'session-name' //name of session
-  })
+  .create(
+    'session-name', //name of session
+    undefined, //catchQR
+    undefined, //statusFind
+    {
+      headless: true, // Headless browser mode
+      executablePath: puppeteer.executablePath(), // Use the correct executable path for Chrome
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    }
+  )
   .then((client) => start(client))
   .catch((erro) => {
     console.log(erro);
