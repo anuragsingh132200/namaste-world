@@ -1,0 +1,14 @@
+{
+  "name": "namaste-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start":"node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "venom-bot": "^5.1.0"
+  }
+}
